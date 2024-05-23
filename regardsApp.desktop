@@ -1,0 +1,28 @@
+[Desktop Entry]
+Name=Regards App
+Comment=Regards Application
+Exec=/home/dpena/launchers/regards_builder.sh %U
+Terminal=true
+Type=Application
+StartupNotify=true
+MimeType=text/plain;
+# TRANSLATORS: Do NOT translate or transliterate this text!
+#              This is an icon file name.
+Icon=/home/dpena/launchers/regards_icon.png
+Actions=say-bye;say-something;
+Categories=GNOME;GTK;Utility;TextEditor;
+# TRANSLATORS: Do NOT translate or localize the semicolons!
+#              The list MUST also end with a semicolon!
+#              Search terms to find this application.
+Keywords=Text;Editor;Plaintext;Write;gedit;
+DBusActivatable=true
+X-Ubuntu-Gettext-Domain=gedit
+
+[Desktop Action say-bye]
+Name=Say Bye Bye
+Exec=/home/dpena/launchers/say_bye.sh
+Terminal=true
+[Desktop Action say-something]
+Name=Say Something
+Exec=/home/dpena/launchers/say_something.sh
+Terminal=true
